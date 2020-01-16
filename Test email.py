@@ -18,7 +18,7 @@ class email:
         try:
             smtpObj = smtplib.SMTP('phx-relayprd-01.adprod.bmc.com')
             smtpObj.sendmail(self.senderEmail, self.receiverEmail, message)
-            print("Successfully sent email...nnn")
+            print("Successfully sent email...")
         except smtplib.SMTPException:
             print("Error: unable to send email.")
 
